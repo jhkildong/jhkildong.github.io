@@ -34,10 +34,11 @@
 # [관련 이미지 & 동영상]
 
 - 이미지  
-  <img src="./img/관련이미지.jpg">
+  <img src="./img/KU.png">
+  게임 배경 컨셉 참고
 - 동영상
+  [![](./img/Titan Slayer.png)](https://www.youtube.com/watch?v=2u_eTJbBGb0)
   Titan Slayer(게임 플레이 방식)
-  [![](./img/그림.png)](https://www.youtube.com/watch?v=2u_eTJbBGb0)
 
 <br><br>
 
