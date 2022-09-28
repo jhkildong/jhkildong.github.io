@@ -37,7 +37,7 @@
   <img src="./img/KU.png"> <br>
   게임 배경 컨셉 참고
 - 동영상
-[![Titan Slayer](./img/TitanSlayer.png)](https://www.youtube.com/watch?v=2u_eTJbBGb0)
+<br>[![Titan Slayer](./img/TitanSlayer.png)](https://www.youtube.com/watch?v=2u_eTJbBGb0)
   Titan Slayer(게임 플레이 방식)
 
 <br><br>
