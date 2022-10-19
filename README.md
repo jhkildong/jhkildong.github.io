@@ -11,7 +11,7 @@
 > [7. 개발 요구사항 & 흐름도](#requirements_flowchart)  
 > [8. 스토리 보드](#story_board)
 
-# 1. 컨셉<a name = "concept">
+# 1. 컨셉<a name = "concept"/>
 
 ## Main Concept : 대학 과정
 > 대학교 생활(1~4학년)에서 겪는 여러 난관들을 처치하며 졸업을 목표로 게임을 진행.  
@@ -31,20 +31,20 @@
 
 ### Sub Concept-5 : VR(Virtual Reality)
 > VR기반으로 게임을 개발해서 색다른 경험 제공.
-</br>
+<br/>
 
-# 2. 참고 자료<a name = "reference">
+# 2. 참고 자료<a name = "reference"/>
 ## 이미지
 <p align="center">
- <img src="./img/KU.png"></br>
+ <img src="./img/KU.png"><br/>
  <em>건국대학교 메타버스</em>
 </p>
  
 ## 동영상
 <p align="center">
  <a href="https://www.youtube.com/watch?v=2u_eTJbBGb0" target="_blank">
-  <img src="./img/TitanSlayer.png">
- </a></br>
+  <img src="./img/TitanSlayer.png"/>
+ </a><br/>
  <em>Titan Slayer(게임 플레이 방식)</em>
 </p>
 
