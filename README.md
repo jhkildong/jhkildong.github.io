@@ -42,7 +42,7 @@
  
 ## 동영상
 <p align="center">
- <a href = "https://www.youtube.com/watch?v=2u_eTJbBGb0">
+ <a href="https://www.youtube.com/watch?v=2u_eTJbBGb0" target="blank">
   <img src="./img/TitanSlayer.png">
  </a></br>
  <em>Titan Slayer(게임 플레이 방식)</em>
