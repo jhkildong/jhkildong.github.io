@@ -36,16 +36,17 @@
 # 2. 참고 자료<a name = "reference"/>
 ## 이미지
 <p align="center">
- <img src="./img/KU.png"><br/>
+ <img src="./img/KU.png" alt="KU_Metaverse"><br/>
  <em>건국대학교 메타버스</em>
 </p>
  
 ## 동영상
 <p align="center">
- <a href="https://www.youtube.com/watch?v=2u_eTJbBGb0" target="_blank">
-  <img src="./img/TitanSlayer.png"/>
- </a><br/>
+<img src="./img/TitanSlayer.png" alt="TitanSlayer"/>
+<br/>
+<a href="https://www.youtube.com/watch?v=2u_eTJbBGb0" target="_blank">
  <em>Titan Slayer(게임 플레이 방식)</em>
+</a>
 </p>
 
 # 3. 대표 이미지<a name = "concept_art">
