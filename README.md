@@ -45,7 +45,7 @@
 <img src="./img/TitanSlayer.png" alt="TitanSlayer"/>
 <br/>
 <a href="https://www.youtube.com/watch?v=2u_eTJbBGb0" target="_blank">
- <em>Titan Slayer(게임 플레이 방식)</em>
+ Titan Slayer(게임 플레이 방식)
 </a>
 </p>
 
