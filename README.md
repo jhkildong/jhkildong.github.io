@@ -1,53 +1,54 @@
-# jhkildong.github.io
+# 캠퍼스 서바이벌(Campus Survival)
 
 
-> __목차__
-> 1. [컨셉](#concept)
-> 2. [관련 이미지 & 동영상](#img_avi)
-> 3. [대표 이미지](#concept_art)
-> 4. [컨셉 & 대표이미지 기반 작품묘사](#description)
-> 5. [<캠퍼스 서바이벌> 구성 요소](#component)
-> 6. [게임 시스템 디자인](#sys_design)
-> 7. [개발 요구사항 & 흐름도](#requirements_flowchart)
-> 8. [스토리 보드](#story_board)
+# 목차
+> [1. 컨셉](#concept)  
+> [2. 참고 자료](#reference)  
+> [3. 대표 이미지](#concept_art)  
+> [4. 컨셉 & 대표이미지 기반 작품묘사](#description)  
+> [5. <캠퍼스 서바이벌> 구성 요소](#component)  
+> [6. 게임 시스템 디자인](#sys_design)  
+> [7. 개발 요구사항 & 흐름도](#requirements_flowchart)  
+> [8. 스토리 보드](#story_board)
 
-# [프로젝트명: 캠퍼스 서바이벌]<a name = "project">
-
-# 1. Concept<a name = "concept">
+# 1. 컨셉<a name = "concept">
 
 ## Main Concept : 대학 과정
-```
- 1. 대학교 생활(1~4학년)에서 겪는 여러 난관들을 처치하며 졸업을 목표로 게임을 진행.
- 2. 대학생활을 겪어본 유저들로부터 공감대를 형성시켜 게임의 몰입도 증가.
-```
-### Sub Concept-1 : 스트레스 해소
-    대학 생활에서 나오는 여러가지 스트레스 요인들을 여러가지 무기로 파괴시키며 스트레스 해소.
+> 대학교 생활(1~4학년)에서 겪는 여러 난관들을 처치하며 졸업을 목표로 게임을 진행.  
+> 대학생활을 겪어본 유저들로부터 공감대를 형성시켜 게임의 몰입도 증가.
 
-### Sub Concept-2 : 공감
-    많은 대학생들이 힘들어 하는 요소들을 추려내서 플레이어의 공감을 이끌어냄.
+### Sub Concept-1 : 스트레스 해소
+> 대학 생활에서 나오는 여러가지 스트레스 요인들을 부숴가며 스트레스 해소.
+
+### Sub Concept-2 : 밈(공감대)
+> 많은 대학생들이 공감할 만한 밈이나 상황들을 추려내서 공감대를 형성.
 
 ### Sub Concept-3 : 타격감
-     타격과 피격 이펙트, 음향에 중점을 두어 타격감이 넘치는 게임.
+> 타격 이펙트, 사운드 에 중점을 두어 타격감이 넘치는 게임.
 
 ### Sub Concept-4 : 배재대학교
-    배재대학교 캠퍼스를 배경으로 제작. 배재대 학생들의 흥미를 유발.
+> 배재대학교 캠퍼스를 배경으로 제작. 배재대 학생들의 흥미를 유발.
 
-### Sub Concept-5 : Virtual Reality
-     VR기반으로 게임을 개발해서 색다른 경험 제공.
+### Sub Concept-5 : VR(Virtual Reality)
+> VR기반으로 게임을 개발해서 색다른 경험 제공.
+</br>
 
-<br><br>
+# 2. 참고 자료<a name = "reference">
+## 이미지
+<p align="center">
+ <img src="./img/KU.png"></br>
+ <em>건국대학교 메타버스</em>
+</p>
+ 
+## 동영상
+<p align="center">
+ <a href = "https://www.youtube.com/watch?v=2u_eTJbBGb0">
+  <img src="./img/TitanSlayer.png">
+ </a></br>
+ <em>Titan Slayer(게임 플레이 방식)</em>
+</p>
 
-# [관련 이미지 & 동영상]<a name = "img_avi">
-
-- 이미지  
-  <img src="./img/KU.png">
-  <br>게임 배경 컨셉 참고
-- 동영상
-  <br>[![Titan Slayer](./img/TitanSlayer.png)](https://www.youtube.com/watch?v=2u_eTJbBGb0)
-  <br>Titan Slayer(게임 플레이 방식)
-<br><br>
-
-# [대표 이미지]<a name = "concept_art">
+# 3. 대표 이미지<a name = "concept_art">
 
 <br><br>
 
