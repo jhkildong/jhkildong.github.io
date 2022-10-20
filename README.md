@@ -5,11 +5,11 @@
  g {background-color: limegreen; color: white; font-weight:bold;}
 </style>  
 
-# 캠퍼스 서바이벌(Campus Survival)
+# 프로젝트명 : 캠퍼스 서바이벌(개발자 : 연정환)
 
 # 목차
 > [1. 컨셉](#concept)  
-> [2. 참고 자료](#reference)  
+> [2. 관련 이미지와 동영상](#reference)  
 > [3. 대표 이미지](#main_img)  
 > [4. 컨셉 & 대표이미지 기반 작품묘사](#description)  
 > [5. 「캠퍼스 서바이벌」 구성 요소](#component)  
@@ -38,7 +38,7 @@
 > VR기반으로 게임을 개발해서 색다른 경험 제공.
 <br/>
 
-# 2. 참고 자료<a name = "reference"/>
+# 2. 관련 이미지와 동영상<a name = "reference"/>
 ## 이미지
 <p align="center">
  <img src="./img/KU.png" alt="KU_Metaverse"><br/>
