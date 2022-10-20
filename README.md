@@ -12,7 +12,7 @@
 > [2. 참고 자료](#reference)  
 > [3. 대표 이미지](#main_img)  
 > [4. 컨셉 & 대표이미지 기반 작품묘사](#description)  
-> [5. **캠퍼스 서바이벌** 구성 요소](#component)  
+> [5. 「캠퍼스 서바이벌」 구성 요소](#component)  
 > [6. 게임 시스템 디자인](#sys_design)  
 > [7. 개발 요구사항 & 흐름도](#requirements_flowchart)
 
@@ -74,7 +74,7 @@
  > 플레이어가 오브젝트 파괴에 성공했을 시 타격음과 이펙트, 컨트롤러 진동으로 파괴했다는 정보를 확실히 전달.
  > Oculus Quest2의 컨트롤러를 이용해서 게임을 진행.
 
-# 5. <캠퍼스 서바이벌> 구성 요소<a name = "component"/>
+# 5. 「캠퍼스 서바이벌」 구성 요소<a name = "component"/>
 
 ## 5-1. 메커니즘
 [게임 방식]
@@ -127,8 +127,9 @@
 > 2. Oculus Quest2 환경 개발
 > 3. 최대 2player 멀티플레이 지원(예정)
  
-# 6. 게임 시스템 디자인<a name = "sys_design"/>
-[게임 오브젝트]
+# 6. 게임 시스템 디자인<a name = "sys_design"/>  
+[게임 오브젝트]  
+
 | 오브젝트 타입 | 오브젝트 이름                 | 오브젝트 이미지 | 비고             |
 | :-----------: | :-----------                  | :------------:  | :-----:          |
 | weaponObj     | 한손검(sword)                 |                 | <y>stage 1</y>   |
@@ -147,7 +148,8 @@
 | enemyObj      | 대왕 박쥐(bigBat)             |                 | <g>stage 2</g>   |
 | enemyObj      | 전공 교수님(majorProfessor)   |                 | <g>stage 2</g>   |
 
-[플레이어 파라미터]
+[플레이어 파라미터]  
+
 | 파라미터              | 설명                                      |  비고                                 |
 | :-----------          | :-----------                              | :------------                         |
 | helthPoint(체력)      | 플레이어의 체력 수치                      | 개발 진행 상황에 따라 삭제될 수 있음  |
@@ -155,14 +157,16 @@
 | weaponBag(무기)       | 무기를 선택할 수 있는 선택창              | 게임 진행 도중 오픈 가능              |
 | score(점수)           | 플레이어가 처치한 적에 따라 증가하는 점수 |                                       |
 
-[enemy 파라미터]
+[enemy 파라미터]  
+
 | 파라미터              | 설명                                      |  비고                                 |
 | :-----------          | :-----------                              | :------------                         |
 | grade(등급)           | enemy의 등급                              | normal, elite, boss로 구분            |
 | point(포인트)         | enemy를 처치할 시 얻는 점수               | grade에 따라 결정                     |
 | helthPoint(체력)      | ememy의 체력 수치                         | boss grade에만 적용                   |
 
-[플레이어 액션 리스트]
+[플레이어 액션 리스트]  
+
 | 액션                  | 설명                                                                                  |
 | :-----------          | :-----------                                                                          |
 | chooseWeapon          | weaponBag 활성화                                                                      |
@@ -170,7 +174,8 @@
 | swordAura             | 트리거를 당기고 lightSaber를 휘두를시 전방으로 검기 방출                              |
 | killEnemy             | player의 움직임에 따라weaponObj와 enemyObj가 상호작용시 enemyObj가 사라지며 점수 획득 |
 
-[enemy 액션 리스트]
+[enemy 액션 리스트]  
+
 | 액션                  | 설명                                                                                  |
 | :-----------          | :-----------                                                                          |
 | taggingEnemy          | enemyObj에 stage에 따른 이름을 붙혀줌                                                 |
@@ -180,7 +185,7 @@
 | aliveEnemy            | EnemyObj가 살아남아 alive 구간에 도달한 경우 -> 플레이어의 helthPoint 감소            |
 | attacPatterEnemy      | bossEnemy의 특수 공격 패턴 ex황금 닭의 황금 깃털 발사                                 |
 
-# 7. 개발 요구사항 & 흐름도<a name="requirements_flowchart">
+# 7. 개발 요구사항 & 흐름도<a name="requirements_flowchart"/>
 
 ## 요구사항
 > 1. 고정 플레이 영역으로 진행  
