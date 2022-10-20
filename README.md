@@ -14,8 +14,7 @@
 > [4. 컨셉 & 대표이미지 기반 작품묘사](#description)  
 > [5. **캠퍼스 서바이벌** 구성 요소](#component)  
 > [6. 게임 시스템 디자인](#sys_design)  
-> [7. 개발 요구사항 & 흐름도](#requirements_flowchart)  
-> [8. 스토리 보드](#story_board)
+> [7. 개발 요구사항 & 흐름도](#requirements_flowchart)
 
 # 1. 컨셉<a name = "concept"/>
 
@@ -142,7 +141,5 @@
 | enemyObj      | 검은색 닭(blackChicken)        |                | <y>stage 1</y>   |
 | enemyObj      | 황금 닭(goldChicken)           |                | <y>stage 1</y>   |
 | enemyObj      | 황금 깃털(goldFeather)         |                | <y>stage 1</y>   |
-| ㄱㄴㄷ               |  ㅁㄴㅇㄹ |   ㅁㄴㅇㄹㄴㅇㅁㄹ | ㅁㄴㅇㄹㅇㄴㅁㄹ|
- 
 
  
