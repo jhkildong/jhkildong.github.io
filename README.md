@@ -1,3 +1,10 @@
+<style type='text/css'>
+ r {background-color: crimson; color: white; font-weight:bold;}
+ y {background-color: gold; color: white; font-weight:bold;}
+ b {background-color: deepskyblue; color: white; font-weight:bold;}
+ g {background-color: limegreen; color: white; font-weight:bold;}
+</style>  
+
 # 캠퍼스 서바이벌(Campus Survival)
 
 # 목차
@@ -121,18 +128,18 @@
 > 3. 최대 2player 멀티플레이 지원(예정)
  
 # 6. 게임 시스템 디자인<a name = "sys_design"/>
-| 오브젝트 타입  | 오브젝트 이름                 | 오브젝트 이미지 | 비고        |
-| :-----------: | :-----------                   | :------------: | :-----:      |
-| weaponObj     | 한손검(sword)                  | img             | stage 1   |
-| weaponObj     | 총(gun)                        | img             | stage 2   |
-| weaponObj     | 방패(shield)                   | img              | stage 3   |
-| weaponObj     | 광선검(lightSaber)             | img                | stage 4   |
-| enemyObj      | 병아리(chick)                  | img                | stage 1   |
-| enemyObj      | 화난 병아리(angryChick )       | img                | stage 1  |
-| enemyObj      | 달걀(egg)                      | img                | stage 1   |
-| enemyObj      | 흰색 닭(chicken)               | img                | stage 1   |
-| enemyObj      | 검은색 닭(blackChicken)        | img                | stage 1   |
-| enemyObj      | 황금 닭(goldChicken)           | img                | stage 1   |
-| enemyObj      | 황금 깃털(goldFeather)         | img                | stage 1   |
 
- 
+| 오브젝트 타입  | 오브젝트 이름                  | 오브젝트 이미지 | 비고             |
+| :-----------: | :-----------                  | :------------: | :-----:          |
+| weaponObj     | 한손검(sword)                 |                | <y>stage 1</y>   |
+| weaponObj     | 총(gun)                       |                | <g>stage 2</g>   |
+| weaponObj     | 방패(shield)                  |                | <b>stage 3</b>   |
+| weaponObj     | 광선검(lightSaber)            |                | <r>stage 4</r>   |
+| enemyObj      | 병아리(chick)                 |                | <y>stage 1</y>   |
+| enemyObj      | 화난 병아리(angryChick_       |                | <y>stage 1</y>   |
+| enemyObj      | 달걀(egg)                     |                | <y>stage 1</y>   |
+| enemyObj      | 흰색 닭(chicken)              |                | <y>stage 1</y>   |
+| enemyObj      | 검은색 닭(blackChicken)       |                | <y>stage 1</y>   |
+| enemyObj      | 황금 닭(goldChicken)          |                | <y>stage 1</y>   |
+| enemyObj      | 황금 깃털(goldFeather)        |                | <y>stage 1</y>   |
+
