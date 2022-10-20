@@ -5,7 +5,6 @@
  b {color: Blue;}
 </style>  
 
-
 # 캠퍼스 서바이벌(Campus Survival)
 
 # 목차
@@ -13,7 +12,7 @@
 > [2. 참고 자료](#reference)  
 > [3. 대표 이미지](#main_img)  
 > [4. 컨셉 & 대표이미지 기반 작품묘사](#description)  
-> [5. <캠퍼스 서바이벌> 구성 요소](#component)  
+> [5. **캠퍼스 서바이벌** 구성 요소](#component)  
 > [6. 게임 시스템 디자인](#sys_design)  
 > [7. 개발 요구사항 & 흐름도](#requirements_flowchart)  
 > [8. 스토리 보드](#story_board)
