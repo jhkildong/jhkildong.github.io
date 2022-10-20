@@ -142,6 +142,7 @@
 | enemyObj      | 검은색 닭(blackChicken)        |                | <y>stage 1</y>   |
 | enemyObj      | 황금 닭(goldChicken)           |                | <y>stage 1</y>   |
 | enemyObj      | 황금 깃털(goldFeather)         |                | <y>stage 1</y>   |
+| ㄱㄴㄷ               |  ㅁㄴㅇㄹ |   ㅁㄴㅇㄹㄴㅇㅁㄹ | ㅁㄴㅇㄹㅇㄴㅁㄹ|
  
 
  
