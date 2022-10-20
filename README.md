@@ -130,16 +130,16 @@
 # 6. 게임 시스템 디자인<a name = "sys_design"/>
 | 오브젝트 타입  | 오브젝트 이름                 | 오브젝트 이미지 | 비고             |
 | :-----------: | :-----------                   | :------------: | :-----:          |
-| weaponObj     | 한손검(sword)                  |                | <y>stage 1</y>   |
-| weaponObj     | 총(gun)                        |                | <g>stage 2</g>   |
-| weaponObj     | 방패(shield)                   |                | <b>stage 3</b>   |
-| weaponObj     | 광선검(lightSaber)             |                | <r>stage 4</r>   |
-| enemyObj      | 병아리(chick)                  |                | <y>stage 1</y>   |
-| enemyObj      | 화난 병아리(angryChick )       |                | <y>stage 1</y>   |
-| enemyObj      | 달걀(egg)                      |                | <y>stage 1</y>   |
-| enemyObj      | 흰색 닭(chicken)               |                | <y>stage 1</y>   |
-| enemyObj      | 검은색 닭(blackChicken)        |                | <y>stage 1</y>   |
-| enemyObj      | 황금 닭(goldChicken)           |                | <y>stage 1</y>   |
-| enemyObj      | 황금 깃털(goldFeather)         |                | <y>stage 1</y>   |
+| weaponObj     | 한손검(sword)                  | img             | <y>stage 1</y>   |
+| weaponObj     | 총(gun)                        | img             | <g>stage 2</g>   |
+| weaponObj     | 방패(shield)                   | img              | <b>stage 3</b>   |
+| weaponObj     | 광선검(lightSaber)             | img                | <r>stage 4</r>   |
+| enemyObj      | 병아리(chick)                  | img                | <y>stage 1</y>   |
+| enemyObj      | 화난 병아리(angryChick )       | img                | <y>stage 1</y>   |
+| enemyObj      | 달걀(egg)                      | img                | <y>stage 1</y>   |
+| enemyObj      | 흰색 닭(chicken)               | img                | <y>stage 1</y>   |
+| enemyObj      | 검은색 닭(blackChicken)        | img                | <y>stage 1</y>   |
+| enemyObj      | 황금 닭(goldChicken)           | img                | <y>stage 1</y>   |
+| enemyObj      | 황금 깃털(goldFeather)         | img                | <y>stage 1</y>   |
 
  
