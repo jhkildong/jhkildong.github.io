@@ -85,7 +85,7 @@
 > 5. 무기는 메뉴키를 통해 교체가 가능하며, 교체 시 쿨타임 적용. 적들의 타입마다 효과적인 무기가 있다. 이를 잘 캐치해서 진행하는 것이 중요.
 
  [도전 과제]
-> 1. 총 8개의 스테이지로 구성(대학교 1학년 1학기 ~ 4학년 2학기) 각 스테이지 마다 일반적인 적(과제물)과 특수한 적(중간, 기말고사)로 구성.  
+> 1. 총 4개의 스테이지로 구성(대학교 1학년 ~ 4학년) 각 스테이지 마다 일반적인 적(과제물)과 특수한 적(중간, 기말고사)로 구성.  
 > 2. 체력을 유지한 채 스테이지 클리어 시 게임 성과에 따라 점수(성적) 책정.  
 > 2. 체력을 전부 소진 시 스테이지 종료 및 게임 오버. 최종 단계 클리어 시 졸업 축하 메세지와 함께 성적 표시.  
  
@@ -128,18 +128,72 @@
 > 3. 최대 2player 멀티플레이 지원(예정)
  
 # 6. 게임 시스템 디자인<a name = "sys_design"/>
+[게임 오브젝트]
+| 오브젝트 타입 | 오브젝트 이름                 | 오브젝트 이미지 | 비고             |
+| :-----------: | :-----------                  | :------------:  | :-----:          |
+| weaponObj     | 한손검(sword)                 |                 | <y>stage 1</y>   |
+| weaponObj     | 총(gun)                       |                 | <g>stage 2</g>   |
+| weaponObj     | 방패(shield)                  |                 | <b>stage 3</b>   |
+| weaponObj     | 광선검(lightSaber)            |                 | <r>stage 4</r>   |
+| enemyObj      | 병아리(chick)                 |                 | <y>stage 1</y>   |
+| enemyObj      | 화난 병아리(angryChick_       |                 | <y>stage 1</y>   |
+| enemyObj      | 달걀(egg)                     |                 | <y>stage 1</y>   |
+| enemyObj      | 흰색 닭(chicken)              |                 | <y>stage 1</y>   |
+| enemyObj      | 검은색 닭(blackChicken)       |                 | <y>stage 1</y>   |
+| enemyObj      | 황금 닭(goldChicken)          |                 | <y>stage 1</y>   |
+| enemyObj      | 황금 깃털(goldFeather)        |                 | <y>stage 1</y>   |
+| enemyObj      | 악마(devil)                   |                 | <g>stage 2</g>   |
+| enemyObj      | 박쥐(bat)                     |                 | <g>stage 2</g>   |
+| enemyObj      | 대왕 박쥐(bigBat)             |                 | <g>stage 2</g>   |
+| enemyObj      | 전공 교수님(majorProfessor)   |                 | <g>stage 2</g>   |
 
-| 오브젝트 타입  | 오브젝트 이름                  | 오브젝트 이미지 | 비고             |
-| :-----------: | :-----------                  | :------------: | :-----:          |
-| weaponObj     | 한손검(sword)                 |                | <y>stage 1</y>   |
-| weaponObj     | 총(gun)                       |                | <g>stage 2</g>   |
-| weaponObj     | 방패(shield)                  |                | <b>stage 3</b>   |
-| weaponObj     | 광선검(lightSaber)            |                | <r>stage 4</r>   |
-| enemyObj      | 병아리(chick)                 |                | <y>stage 1</y>   |
-| enemyObj      | 화난 병아리(angryChick_       |                | <y>stage 1</y>   |
-| enemyObj      | 달걀(egg)                     |                | <y>stage 1</y>   |
-| enemyObj      | 흰색 닭(chicken)              |                | <y>stage 1</y>   |
-| enemyObj      | 검은색 닭(blackChicken)       |                | <y>stage 1</y>   |
-| enemyObj      | 황금 닭(goldChicken)          |                | <y>stage 1</y>   |
-| enemyObj      | 황금 깃털(goldFeather)        |                | <y>stage 1</y>   |
+[플레이어 파라미터]
+| 파라미터              | 설명                                      |  비고                                 |
+| :-----------          | :-----------                              | :------------                         |
+| helthPoint(체력)      | 플레이어의 체력 수치                      | 개발 진행 상황에 따라 삭제될 수 있음  |
+| weapon(무기)          | 플레이어가 들고 있는 무기                 | 게임 진행 도중 변경 가능              |
+| weaponBag(무기)       | 무기를 선택할 수 있는 선택창              | 게임 진행 도중 오픈 가능              |
+| score(점수)           | 플레이어가 처치한 적에 따라 증가하는 점수 |                                       |
 
+[enemy 파라미터]
+| 파라미터              | 설명                                      |  비고                                 |
+| :-----------          | :-----------                              | :------------                         |
+| grade(등급)           | enemy의 등급                              | normal, elite, boss로 구분            |
+| point(포인트)         | enemy를 처치할 시 얻는 점수               | grade에 따라 결정                     |
+| helthPoint(체력)      | ememy의 체력 수치                         | boss grade에만 적용                   |
+
+[플레이어 액션 리스트]
+| 액션                  | 설명                                                                                  |
+| :-----------          | :-----------                                                                          |
+| chooseWeapon          | weaponBag 활성화                                                                      |
+| gutShooting           | 트리거를 당길시 총알(bulletObj)이 나감                                                |
+| swordAura             | 트리거를 당기고 lightSaber를 휘두를시 전방으로 검기 방출                              |
+| killEnemy             | player의 움직임에 따라weaponObj와 enemyObj가 상호작용시 enemyObj가 사라지며 점수 획득 |
+
+[enemy 액션 리스트]
+| 액션                  | 설명                                                                                  |
+| :-----------          | :-----------                                                                          |
+| taggingEnemy          | enemyObj에 stage에 따른 이름을 붙혀줌                                                 |
+| generateEnemy         | 랜덤한 위치에서 enemyObj 생성 후 플레이어를 향해 날아감                               |
+| crashEnemy            | weaponObj와 상호작용을 하여 enemyObj 터짐                                             |
+| bombEnemy             | crashEnemy가 된 enemyObj가 터지는 액션                                                |
+| aliveEnemy            | EnemyObj가 살아남아 alive 구간에 도달한 경우 -> 플레이어의 helthPoint 감소            |
+| attacPatterEnemy      | bossEnemy의 특수 공격 패턴 ex황금 닭의 황금 깃털 발사                                 |
+
+# 7. 개발 요구사항 & 흐름도<a name="requirements_flowchart">
+
+## 요구사항
+> 1. 고정 플레이 영역으로 진행  
+> 2. 타이틀 화면은 중앙 상단부에 게임 타이틀과 중앙 하단부에 3가지 메뉴(모드 선택, 옵션, 나가기)로 구성  
+> 3. 모드 선택 메뉴 선택시 모드 선택 화면으로 전환  
+> 4. (모드 선택 화면) "혼자 하기" 모드와 "같이 하기"모드로 구성. 화면 중앙을 기준으로 왼쪽과 오른쪽으로 선택  
+> 5. "혼자 하기" 모드 선택시 난이도 선택 화면으로 전환  
+> 6. "같이 하기" 모드는 "개발 진행중" 문구와 함께 비 활성화(추후 개발 진행상황에 맞춰 변경 가능)  
+> 7. (난이도 선택 화면) 현생 모드(쉬움)와 갓생 모드(어려움)으로 구성 모드 선택 화면과 동일한 UI  
+> 8. 난이도 선택시 "시작하기" 버튼 알림창 활성화  
+> 9. 게임 시작히 플레이어는 기본적으로 양손에 sword weaponObj를 장착하고 시작  
+> 10. 각 컨트롤러의 상단부 버튼(Left : Y, Right : B)클릭 시 클릭한 컨트롤러 방향에 weoponBag 활성화  
+> 11. sword는 검의 몸체 부분이 enemy와 충돌만 있어도 상호작용  
+> 12. gun은 컨트롤러의 트리거부분 클릭시 단발 발사  
+> 13. oculus menu 버튼 클릭시 현재 게임 일시 정지, 계속 하기, 나가기 선택창 활성화
+> 14. 개발 진행 상황에 맞춰 "같이 하기"모드 개발 진행
