@@ -183,6 +183,16 @@
 | aliveEnemy            | EnemyObj가 살아남아 alive 구간에 도달한 경우 -> 플레이어의 helthPoint 감소            |
 | attacPatterEnemy      | bossEnemy의 특수 공격 패턴 ex황금 닭의 황금 깃털 발사                                 |
 
+[게임규칙]
+> 1. weaponObj와 enemyObj 충돌시 enemyObj는 소멸 player score 증가  
+> 2. enemy 등급에 따라 normal은 1번 elite는 2번 충돌시 소멸  
+> 3. boss enemy는 특수 패턴을 파훼시 소멸  
+> 4. enemyObj는 생성된 후 플레이어 뒤쪽에 alive구역을 향해 날아감. 구역에 도달시 경고음과 함께 hp감소  
+> 5. 스테이지 마지막 boss 패턴 파훼시 스테이지 클리어  
+> 6. 스테이지 클리어 시 player score에 따라 등급 산출  
+> 7. 스테이지 4 클리어시 전체 스테이지 평균 등급 산출  
+> 8. 각 스테이지 마다 f등급이 나올 경우 스테이지 1부터 다시 실행  
+
 # 7. 개발 요구사항 & 흐름도<a name="requirements_flowchart"/>
 
 ## 요구사항
