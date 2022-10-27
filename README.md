@@ -257,7 +257,8 @@
 > 16. (EnemyBase)enemyAilveArea(player 시점방향 뒤쪽으로 2m떨어진 곳)에 enemyObj도달 시 player healthPoint감소  
 > 17. (EnemyBase)normal은 2, elite는 5만큼의 데미지를 줌  
 
-### 3주차(BossEnemy 모델링)
+### 3주차(Enemy 모델링)
+> 18. (<y>stage 1</y>)병아리는 normal 등급, 화난 병아리는 elite등급  
 > 19. (<y>stage 1</y>)총 4번(1학기 중간, 기말, 2학기 중간, 기말고사) boss등급 enemy출현  
 > 20. (<y>stage 1</y>)1학기 중간고사 - 흰색 닭  
 > 27. (<y>stage 1</y>)1학기 기말고사 - 검은색 닭  
