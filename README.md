@@ -209,77 +209,78 @@
 > 11. (PlayerWeapon)sword는 검의 몸체 부분이 enemy와 충돌만 있어도 상호작용  
 > 12. (PlayerWeapon)gun은 컨트롤러의 트리거부분 누를 시 단발 발사  
 > 13. (PlayerWeapon)lightSaber는 컨트롤러의 트리거를 누른 상태(1초간)에서 검을 휘두를시 검을 휘두른 방향으로 swordAura 발사  
-> 14. (EnemyBase)enemy는 enemySpawnArea(player로 시점방향으로 10m 떨어진 곳)에서 랜덤하게 생성 후 palyer를 향해 다가옴  
-> 15. (EnemyBase)랜덤하게 생성되는 enemy에 normal, elite등급을 설정하고, 8:2 비율로 생성  
-> 16. (EnemyBase)enemyAilveArea(player 시점방향 뒤쪽으로 2m떨어진 곳)에 enemyObj도달 시 player healthPoint감소  
-> 17. (EnemyBase)normal은 2, elite는 5만큼의 데미지를 줌  
-> 18. (<y>stage 1</y>)병아리는 normal 등급, 화난 병아리는 elite등급  
-> 19. (<y>stage 1</y>)총 4번(1학기 중간, 기말, 2학기 중간, 기말고사) boss등급 enemy출현  
-> 20. (<y>stage 1</y>)1학기 중간고사 - 흰색 닭  
-> 21. (<y>stage 1</y>)흰색 닭 attack pattern - enemySpawnArea에서 player를 향해 달걀 3번 투척 후 오른쪽 or 왼쪽 이동 후 반복. enemySpawnArea를 3등분한 기준으로 이동.  
-> 22. (<y>stage 1</y>)흰색 닭 attack pattern - 중앙에서 달걀 5개를 동시에 투척(수평방향)  
-> 23. (<y>stage 1</y>)흰색 닭 attack pattern - 21)패턴은 3번 연속 실행 후 2초간 딜레이. 총 3번의 반복동작 이후 22)패턴 실행  
-> 24. (<y>stage 1</y>)흰색 닭 attack pattern - 달걀의 데미지는 normal등급 enemy와 동일  
-> 25. (<y>stage 1</y>)흰색 닭 attack pattern - 달걀 50개 파괴시 19)패턴의 반복 동작 이후 플레이어를 향해 날아들어 쪼기 패턴 실행  
-> 26. (<y>stage 1</y>)흰색 닭 attack pattern - 쪼기 데미지는 3 쪼는 순간에만 오브젝트가 활성화되고, 활성화 될 때 공격시 강하게 넉백. 총 3번의 넉백 성공시 도주  
-> 27. (<y>stage 1</y>)1학기 기말고사 - 검은색 닭  
-> 28. (<y>stage 1</y>)검은색 닭 attack pattern - 19), 20)패턴과 동일 쪼기 패턴의 데미지만 4로 변경  
-> 29. (<y>stage 1</y>)2학기 중간고사 - 흰색 닭&검은색 닭  
-> 30. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 달걀 3번 투척 후 이동 패턴을 총 4구역으로 나눠서 player시야 기준 왼쪽 2구역에 흰색 닭, 오른쪽 2구역에 검은색 닭 배치. 패턴은 순차적 실행(동시x)  
-> 31. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴도 동시 실행. 흰색>검은색 순으로 실행  
-> 32. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴을 진입하는 달걀파괴 횟수 60회로 증가, 넉백 성공은 각각 2번씩 성공시 도주  
-> 33. (<y>stage 1</y>)2학기 기말고사 - 황금 닭  
-> 34. (<y>stage 1</y>)황금 닭 attack pattern - 19), 20)패턴과 동일  
-> 35. (<y>stage 1</y>)황금 닭 attack pattern - 달걀을 20, 40, 60개 파괴시 19)패턴 반복동작 이후 중앙으로 이동 후 공중에서 플레이어를 향해 깃털을 다수 발사. 깃털의 데미지는 1  
-> 36. (<y>stage 1</y>)황금 닭 attack pattern - 35)패턴 총 3번 실행 후 쪼기 패턴 실행. 5번 넉백시 도주 후 스테이지 클리어  
-> 37. (<g>stage 2</g>)stage 2 진입 시 gun weapon추가 알림 창 띄움  
-> 38. (<g>stage 2</g>)악마, 박쥐는 normal등급 대왕 박쥐는 elite 등급  
-> 39. (<g>stage 2</g>)박쥐와 대왕박쥐는 공중에서 접근  
-> 40. (<g>stage 2</g>)1학기 중간고사 - 전공 교수님(stage 2의 보스는 모두 동일, 패턴만 추가)  
-> 41. (/*TODO : stage 2 BossEnemyPattern 추가*/)
-> 42. oculus menu 버튼 클릭시 현재 게임 일시 정지, 계속 하기, 나가기 선택창 활성화  
-> 43. 개발 진행 상황에 맞춰 "같이 하기"모드 개발 진행  
+> 14. (PlayerParameter)최대 helthPoint는 100으로 설정, 플레이어에게 체력 게이지는 보여주지않고 체력이 20이하로 내려갈 시 경고음과 함께 빨간색 화면이 깜빡임을 통해 경고표시  
+> 15. (EnemyBase)enemy는 enemySpawnArea(player로 시점방향으로 10m 떨어진 곳)에서 랜덤하게 생성 후 palyer를 향해 다가옴  
+> 16. (EnemyBase)랜덤하게 생성되는 enemy에 normal, elite등급을 설정하고, 8:2 비율로 생성  
+> 17. (EnemyBase)enemyAilveArea(player 시점방향 뒤쪽으로 2m떨어진 곳)에 enemyObj도달 시 player healthPoint감소  
+> 18. (EnemyBase)normal은 2, elite는 5만큼의 데미지를 줌  
+> 19. (<y>stage 1</y>)병아리는 normal 등급, 화난 병아리는 elite등급  
+> 20. (<y>stage 1</y>)총 4번(1학기 중간, 기말, 2학기 중간, 기말고사) boss등급 enemy출현  
+> 21. (<y>stage 1</y>)1학기 중간고사 - 흰색 닭  
+> 22. (<y>stage 1</y>)흰색 닭 attack pattern - enemySpawnArea에서 player를 향해 달걀 3번 투척 후 오른쪽 or 왼쪽 이동 후 반복. enemySpawnArea를 3등분한 기준으로 이동.  
+> 23. (<y>stage 1</y>)흰색 닭 attack pattern - 중앙에서 달걀 5개를 동시에 투척(수평방향)  
+> 24. (<y>stage 1</y>)흰색 닭 attack pattern - 21)패턴은 3번 연속 실행 후 2초간 딜레이. 총 3번의 반복동작 이후 22)패턴 실행  
+> 25. (<y>stage 1</y>)흰색 닭 attack pattern - 달걀의 데미지는 normal등급 enemy와 동일  
+> 26. (<y>stage 1</y>)흰색 닭 attack pattern - 달걀 50개 파괴시 19)패턴의 반복 동작 이후 플레이어를 향해 날아들어 쪼기 패턴 실행  
+> 27. (<y>stage 1</y>)흰색 닭 attack pattern - 쪼기 데미지는 3 쪼는 순간에만 오브젝트가 활성화되고, 활성화 될 때 공격시 강하게 넉백. 총 3번의 넉백 성공시 도주  
+> 28. (<y>stage 1</y>)1학기 기말고사 - 검은색 닭  
+> 29. (<y>stage 1</y>)검은색 닭 attack pattern - 19), 20)패턴과 동일 쪼기 패턴의 데미지만 4로 변경  
+> 30. (<y>stage 1</y>)2학기 중간고사 - 흰색 닭&검은색 닭  
+> 31. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 달걀 3번 투척 후 이동 패턴을 총 4구역으로 나눠서 player시야 기준 왼쪽 2구역에 흰색 닭, 오른쪽 2구역에 검은색 닭 배치. 패턴은 순차적 실행(동시x)  
+> 32. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴도 동시 실행. 흰색>검은색 순으로 실행  
+> 33. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴을 진입하는 달걀파괴 횟수 60회로 증가, 넉백 성공은 각각 2번씩 성공시 도주  
+> 34. (<y>stage 1</y>)2학기 기말고사 - 황금 닭  
+> 35. (<y>stage 1</y>)황금 닭 attack pattern - 19), 20)패턴과 동일  
+> 36. (<y>stage 1</y>)황금 닭 attack pattern - 달걀을 20, 40, 60개 파괴시 19)패턴 반복동작 이후 중앙으로 이동 후 공중에서 플레이어를 향해 깃털을 다수 발사. 깃털의 데미지는 1  
+> 37. (<y>stage 1</y>)황금 닭 attack pattern - 35)패턴 총 3번 실행 후 쪼기 패턴 실행. 5번 넉백시 도주 후 스테이지 클리어  
+> 38. (<g>stage 2</g>)stage 2 진입 시 gun weapon추가 알림 창 띄움  
+> 39. (<g>stage 2</g>)악마, 박쥐는 normal등급 대왕 박쥐는 elite 등급  
+> 40. (<g>stage 2</g>)박쥐와 대왕박쥐는 공중에서 접근  
+> 41. (<g>stage 2</g>)1학기 중간고사 - 전공 교수님(stage 2의 보스는 모두 동일, 패턴만 추가)  
+> 42. (/*TODO : stage 2 BossEnemyPattern 추가*/)
+> 43. oculus menu 버튼 클릭시 현재 게임 일시 정지, 계속 하기, 나가기 선택창 활성화  
+> 44. 개발 진행 상황에 맞춰 "같이 하기"모드 개발 진행  
 
 <hr/>
 
 ## 6주 요구사항
 
 ### 1주차(PlayerWeapon 구현)
-> 9. (PlayerWeapon)게임 시작히 플레이어는 기본적으로 양손에 sword weaponObj를 장착하고 시작  
-> 11. (PlayerWeapon)sword는 검의 몸체 부분이 enemy와 충돌만 있어도 상호작용  
-> 12. (PlayerWeapon)gun은 컨트롤러의 트리거부분 누를 시 단발 발사  
+> 9. ~~(PlayerWeapon)게임 시작히 플레이어는 기본적으로 양손에 sword weaponObj를 장착하고 시작~~  
+> 11. ~~(PlayerWeapon)sword는 검의 몸체 부분이 enemy와 충돌만 있어도 상호작용~~  
+> 12. ~~(PlayerWeapon)gun은 컨트롤러의 트리거부분 누를 시 단발 발사~~ (coroutine 사용 쿨타임 적용)  
 > 13. (PlayerWeapon)lightSaber는 컨트롤러의 트리거를 누른 상태(1초간)에서 검을 휘두를시 검을 휘두른 방향으로 swordAura 발사  
 
-### 2주차(WeaponBag & EnemyBase 구현)
+### 2주차(WeaponBag & Parameter & EnemyBase 구현)
 > 10. (PlayerWeapon)각 컨트롤러의 상단부 버튼(Left : Y, Right : B)클릭 시 클릭한 컨트롤러 방향에 weaponBag 활성화  
-> 14. (EnemyBase)enemy는 enemySpawnArea(player로 시점방향으로 10m 떨어진 곳)에서 랜덤하게 생성 후 palyer를 향해 다가옴  
-> 15. (EnemyBase)랜덤하게 생성되는 enemy에 normal, elite등급을 설정하고, 8:2 비율로 생성  
-> 16. (EnemyBase)enemyAilveArea(player 시점방향 뒤쪽으로 2m떨어진 곳)에 enemyObj도달 시 player healthPoint감소  
-> 17. (EnemyBase)normal은 2, elite는 5만큼의 데미지를 줌  
+> 14. (PlayerParameter)최대 helthPoint는 100으로 설정, 플레이어에게 체력 게이지는 보여주지않고 체력이 20이하로 내려갈 시 경고음과 함께 빨간색 화면이 깜빡임을 통해 경고표시  
+> 15. (EnemyBase)enemy는 enemySpawnArea(player로 시점방향으로 10m 떨어진 곳)에서 랜덤하게 생성 후 palyer를 향해 다가옴  
+> 16. (EnemyBase)랜덤하게 생성되는 enemy에 normal, elite등급을 설정하고, 8:2 비율로 생성  
+> 17. (EnemyBase)enemyAilveArea(player 시점방향 뒤쪽으로 2m떨어진 곳)에 enemyObj도달 시 player healthPoint감소  
+> 18. (EnemyBase)normal은 2, elite는 5만큼의 데미지를 줌  
 
-### 3주차(Enemy 모델링)
-> 18. (<y>stage 1</y>)병아리는 normal 등급, 화난 병아리는 elite등급  
-> 19. (<y>stage 1</y>)총 4번(1학기 중간, 기말, 2학기 중간, 기말고사) boss등급 enemy출현  
-> 20. (<y>stage 1</y>)1학기 중간고사 - 흰색 닭  
-> 27. (<y>stage 1</y>)1학기 기말고사 - 검은색 닭  
-> 33. (<y>stage 1</y>)2학기 기말고사 - 황금 닭  
+### 3주차(Enemy 애니메이션)
+> 19. (<y>stage 1</y>)병아리는 normal 등급, 화난 병아리는 elite등급  
+> 20. (<y>stage 1</y>)총 4번(1학기 중간, 기말, 2학기 중간, 기말고사) boss등급 enemy출현  
+> 21. (<y>stage 1</y>)1학기 중간고사 - 흰색 닭  
+> 28. (<y>stage 1</y>)1학기 기말고사 - 검은색 닭  
+> 34. (<y>stage 1</y>)2학기 기말고사 - 황금 닭  
 
 ### 4주차(AttackPattern - 1)
-> 21. (<y>stage 1</y>)흰색 닭 attack pattern - enemySpawnArea에서 player를 향해 달걀 3번 투척 후 오른쪽 or 왼쪽 이동 후 반복. enemySpawnArea를 3등분한 기준으로 이동.  
-> 22. (<y>stage 1</y>)흰색 닭 attack pattern - 중앙에서 달걀 5개를 동시에 투척(수평방향)  
-> 23. (<y>stage 1</y>)흰색 닭 attack pattern - 21)패턴은 3번 연속 실행 후 2초간 딜레이. 총 3번의 반복동작 이후 22)패턴 실행  
-> 24. (<y>stage 1</y>)흰색 닭 attack pattern - 달걀의 데미지는 normal등급 enemy와 동일 
-
+> 22. (<y>stage 1</y>)흰색 닭 attack pattern - enemySpawnArea에서 player를 향해 달걀 3번 투척 후 오른쪽 or 왼쪽 이동 후 반복. enemySpawnArea를 3등분한 기준으로 이동.  
+> 23. (<y>stage 1</y>)흰색 닭 attack pattern - 중앙에서 달걀 5개를 동시에 투척(수평방향)  
+> 24. (<y>stage 1</y>)흰색 닭 attack pattern - 21)패턴은 3번 연속 실행 후 2초간 딜레이. 총 3번의 반복동작 이후 22)패턴 실행  
+> 25. (<y>stage 1</y>)흰색 닭 attack pattern - 달걀의 데미지는 normal등급 enemy와 동일 
 
 ### 5주차(AttackPattern - 2)
-> 25. (<y>stage 1</y>)흰색 닭 attack pattern - 달걀 50개 파괴시 19)패턴의 반복 동작 이후 플레이어를 향해 날아들어 쪼기 패턴 실행  
-> 26. (<y>stage 1</y>)흰색 닭 attack pattern - 쪼기 데미지는 3 쪼는 순간에만 오브젝트가 활성화되고, 활성화 될 때 공격시 강하게 넉백. 총 3번의 넉백 성공시 도주  
+> 26. (<y>stage 1</y>)흰색 닭 attack pattern - 달걀 50개 파괴시 19)패턴의 반복 동작 이후 플레이어를 향해 날아들어 쪼기 패턴 실행  
+> 27. (<y>stage 1</y>)흰색 닭 attack pattern - 쪼기 데미지는 3 쪼는 순간에만 오브젝트가 활성화되고, 활성화 될 때 공격시 강하게 넉백. 총 3번의 넉백 성공시 도주  
 > 28. (<y>stage 1</y>)검은색 닭 attack pattern - 19), 20)패턴과 동일 쪼기 패턴의 데미지만 4로 변경  
-> 34. (<y>stage 1</y>)황금 닭 attack pattern - 19), 20)패턴과 동일  
+> 35. (<y>stage 1</y>)황금 닭 attack pattern - 19), 20)패턴과 동일  
 
 ### 6주차(AttackPattern - 3)
-> 30. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 달걀 3번 투척 후 이동 패턴을 총 4구역으로 나눠서 player시야 기준 왼쪽 2구역에 흰색 닭, 오른쪽 2구역에 검은색 닭 배치. 패턴은 순차적 실행(동시x)  
-> 31. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴도 동시 실행. 흰색>검은색 순으로 실행  
-> 32. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴을 진입하는 달걀파괴 횟수 60회로 증가, 넉백 성공은 각각 2번씩 성공시 도주  
-> 35. (<y>stage 1</y>)황금 닭 attack pattern - 달걀을 20, 40, 60개 파괴시 19)패턴 반복동작 이후 중앙으로 이동 후 공중에서 플레이어를 향해 깃털을 다수 발사. 깃털의 데미지는 1  
-> 36. (<y>stage 1</y>)황금 닭 attack pattern - 35)패턴 총 3번 실행 후 쪼기 패턴 실행. 5번 넉백시 도주 후 스테이지 클리어  
+> 31. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 달걀 3번 투척 후 이동 패턴을 총 4구역으로 나눠서 player시야 기준 왼쪽 2구역에 흰색 닭, 오른쪽 2구역에 검은색 닭 배치. 패턴은 순차적 실행(동시x)  
+> 32. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴도 동시 실행. 흰색>검은색 순으로 실행  
+> 33. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴을 진입하는 달걀파괴 횟수 60회로 증가, 넉백 성공은 각각 2번씩 성공시 도주  
+> 36. (<y>stage 1</y>)황금 닭 attack pattern - 달걀을 20, 40, 60개 파괴시 19)패턴 반복동작 이후 중앙으로 이동 후 공중에서 플레이어를 향해 깃털을 다수 발사. 깃털의 데미지는 1  
+> 37. (<y>stage 1</y>)황금 닭 attack pattern - 35)패턴 총 3번 실행 후 쪼기 패턴 실행. 5번 넉백시 도주 후 스테이지 클리어  
