@@ -1,8 +1,8 @@
 <style type='text/css'>
- r {background-color: crimson; color: white; font-weight:bold;}
- y {background-color: gold; color: white; font-weight:bold;}
- b {background-color: deepskyblue; color: white; font-weight:bold;}
- g {background-color: limegreen; color: white; font-weight:bold;}
+    st1 {background-color: gold; color: white; font-weight:bold;}
+    st2 {background-color: limegreen; color: white; font-weight:bold;}
+    st3 {background-color: deepskyblue; color: white; font-weight:bold;}
+    st4 {background-color: crimson; color: white; font-weight:bold;}
 </style>  
 
 # 프로젝트명 : 캠퍼스 서바이벌(개발자 : 연정환)
@@ -61,11 +61,11 @@
 
 <br/><br/>
 
-# 4. 컨셉 & 대표이미지 기반 작품묘사<a name = "description"/>
+# 4. 작품묘사<a name = "description"/>
 
 ### 대표이미지 기반
- > 레고와 비슷한 블럭 모양으로 오브젝트를 구성.
- > 배재대학교 캠퍼스 전경을 참고.
+ > 픽셀, 로우폴리 스타일로 오브젝트를 구성.
+ > 배재대학교 캠퍼스 전경을 참고해서 맵 디자인.
 
 ### 컨셉 기반
  > 스테이지 구성을 **대학생활**에 맞추어 구성.   
@@ -79,10 +79,9 @@
 ## 5-1. 메커니즘
 [게임 방식]
 > 1. VR게임으로 주어진 무기를 이용해 밀려오는 적(과제물)을 처치. 플레이어는 고정된 위치에서 플레이 한다.  
-> 2. 무기는 스테이지 클리어(학년 진급) 시 차등 지급. 첫 스테이지에는 한손검을 소지. 한손검의 경우 휘두르는 모션을 통해 적을 공격할 수 있다.  
-> 3. 학년이 넘어갈 때 마다 총, 방패, 광선검을 지급.   
-> 4. 총은 트리거를 사용해 격발이 가능하고, 광선검은 트리거를 당긴채 휘두르면 넓은 범위의 검기를 발사. 방패는 날아오는 공격을 막아낼 수 있음.  
-> 5. 무기는 메뉴키를 통해 교체가 가능하며, 교체 시 쿨타임 적용. 적들의 타입마다 효과적인 무기가 있다. 이를 잘 캐치해서 진행하는 것이 중요.
+> 2. 무기는 스테이지 클리어(학년 진급) 시 스테이지에 해당하는 무기 지급. 첫 스테이지에는 한손검을 소지. 
+> 3. 총은 트리거를 사용해 격발이 가능하고, 광선검은 트리거를 당긴채 휘두르면 넓은 범위의 검기를 발사. 방패는 날아오는 공격을 막아낼 수 있음.  
+> 4. 무기는 메뉴키를 통해 교체가 가능하며, 교체 시 쿨타임 적용. 적의 특징에 따라 효과적인 무기가 있다. 이를 잘 캐치해서 진행하는 것이 중요.
 
  [도전 과제]
 > 1. 총 4개의 스테이지로 구성(대학교 1학년 ~ 4학년) 각 스테이지 마다 일반적인 적(과제물)과 특수한 적(중간, 기말고사)로 구성.  
@@ -91,9 +90,9 @@
 > 4. 최종 단계 클리어 시 졸업 축하 메세지와 함께 성적 표시.  
  
  [재미 요소]
-> 1. 스테이지마다 나오는 적들을 각 학년마다 있을 법한 어려운 일들로 구성해 공감을 이끌어낸다.
+> 1. 스테이지마다 나오는 적들을 각 학년마다 있을 법한 어려운 일들로 구성해 공감을 이끌어낸다.  
 > 2. 난이도는 총 두가지(easy, hard)로 설정해 플레이어의 성향에 맞게 플레이 가능.
-> 3. 2인 모드(깐부 모드(협동)/라이벌 모드(경쟁))를 구현해 친구와 같이 즐길 수 있음(예정).
+> 3. 2인 모드(깐부 모드(협동)/라이벌 모드(경쟁))를 구현해 친구와 같이 즐길 수 있음.
 
 ## 5-2. 이야기
 [시놉시스]
@@ -111,83 +110,79 @@
 
 ## 5-3. 미적요소
 
- [컬러]  
+[시각 효과]  
 > 1. 배경 - 배재대 캠퍼스를 배경으로 구현해 배재대 학생들의 흥미를 유발.
-> 2. 적 디자인 - 불꽃, 악마 등을 귀엽게 디자인해서 확실하게 적의 느낌을 주면서도 게임의 전반적인 분위기는 밝게 설정.
-> 3. 컬러 - 파스텔톤으로 구성해 전반적으로 화사한 캠퍼스 느낌을 줌.
+> 2. 적 디자인 - 귀엽지만 악랄한 이미지의 적으로 구성해 적이라는 이미지를 확실하게 전달.
+> 3. 컬러 - 파스텔톤으로 구성해 화사한 느낌으로 구성.
 
-[음향]  
+[음향 효과]  
 > 1. 공격과 피격의 타격음을 확실하게 설정하여 타격감을 극대화.
 > 2. 밈 요소의 더빙을 통해 또 다른 재미 추가.
 
 ## 5-4. 기술
 > 1. Unity 기반 VR게임
 > 2. Oculus Quest2 환경 개발
-> 3. 최대 2인 멀티플레이 지원(예정)
+> 3. 최대 2인 멀티플레이 지원
  
 # 6. 게임 시스템 디자인<a name = "sys_design"/>  
 [게임 오브젝트]  
 
-| 오브젝트 타입 | 오브젝트 이름                 | 오브젝트 이미지 | 비고             |
-| :-----------: | :-----------                  | :------------:  | :-----:          |
-| weaponObj     | 한손검(sword)                 |                 | <y>stage 1</y>   |
-| weaponObj     | 총(gun)                       |                 | <g>stage 2</g>   |
-| weaponObj     | 방패(shield)                  |                 | <b>stage 3</b>   |
-| weaponObj     | 광선검(lightSaber)            |                 | <r>stage 4</r>   |
-| enemyObj      | 병아리(chick)                 |                 | <y>stage 1</y>   |
-| enemyObj      | 화난 병아리(angryChick_       |                 | <y>stage 1</y>   |
-| enemyObj      | 달걀(egg)                     |                 | <y>stage 1</y>   |
-| enemyObj      | 흰색 닭(chicken)              |                 | <y>stage 1</y>   |
-| enemyObj      | 검은색 닭(blackChicken)       |                 | <y>stage 1</y>   |
-| enemyObj      | 황금 닭(goldChicken)          |                 | <y>stage 1</y>   |
-| enemyObj      | 황금 깃털(goldFeather)        |                 | <y>stage 1</y>   |
-| enemyObj      | 악마(devil)                   |                 | <g>stage 2</g>   |
-| enemyObj      | 박쥐(bat)                     |                 | <g>stage 2</g>   |
-| enemyObj      | 대왕 박쥐(bigBat)             |                 | <g>stage 2</g>   |
-| enemyObj      | 전공 교수님(majorProfessor)   |                 | <g>stage 2</g>   |
+| 오브젝트 타입 | 오브젝트 이름                 | 비고                 |
+| :-----------: | :-----------                  | :-----:              |
+| weapon        | 한손검(sword)                 | <st1>stage 1</st1>   |
+| weapon        | 총(gun)                       | <st2>stage 2</st2>   |
+| weapon        | 방패(shield)                  | <st3>stage 3</st3>   |
+| weapon        | 광선검(lightSaber)            | <st4>stage 4</st4>   |
+| enemy         | 병아리(chick)                 | <st1>stage 1</st1>   |
+| enemy         | 화난 병아리(angryChick)       | <st1>stage 1</st1>   |
+| enemy         | 달걀(egg)                     | <st1>stage 1</st1>   |
+| enemy         | 흰색 닭(chicken)              | <st1>stage 1</st1>   |
+| enemy         | 검은색 닭(blackChicken)       | <st1>stage 1</st1>   |
+| enemy         | 황금 닭(goldChicken)          | <st1>stage 1</st1>   |
+| enemy         | 황금 깃털(goldFeather)        | <st1>stage 1</st1>   |
+| enemy         | 악마(devil)                   | <st2>stage 2</st2>   |
+| enemy         | 박쥐(bat)                     | <st2>stage 2</st2>   |
+| enemy         | 대왕 박쥐(bigBat)             | <st2>stage 2</st2>   |
+| enemy         | 전공 교수님(majorProfessor)   | <st2>stage 2</st2>   |
 
 [플레이어 파라미터]  
 
-| 파라미터              | 설명                                      |  비고                                 |
-| :-----------          | :-----------                              | :------------                         |
-| helthPoint(체력)      | 플레이어의 체력 수치                      |                                       |
-| weapon(무기)          | 플레이어가 들고 있는 무기                 | 게임 진행 도중 변경 가능              |
-| weaponBag(무기)       | 무기를 선택할 수 있는 선택창              | 게임 진행 도중 오픈 가능              |
-| score(점수)           | 플레이어가 처치한 적에 따라 증가하는 점수 |                                       |
+| 파라미터              | 설명                                      |  비고         |
+| :-----------          | :-----------                              | :------------ |
+| helthPoint(체력)      | 플레이어의 체력 수치                      |               |
+| weapon(무기)          | 플레이어가 들고 있는 무기                 |               |
+| weaponBag(무기)       | 무기를 선택할 수 있는 선택창              |               |
+| score(점수)           | 플레이어가 처치한 적에 따라 증가하는 점수 |               |
 
 [enemy 파라미터]  
 
 | 파라미터              | 설명                                      |  비고                                 |
 | :-----------          | :-----------                              | :------------                         |
 | grade(등급)           | enemy의 등급                              | normal, elite, boss로 구분            |
-| point(포인트)         | enemy를 처치할 시 얻는 점수               | grade에 따라 결정                     |
-| helthPoint(체력)      | ememy의 체력 수치                         | boss grade에만 적용                   |
+| point(포인트)         | enemy를 처치할 시 얻는 점수               | 등급에 따라 결정                      |
 
 [플레이어 액션 리스트]  
 
 | 액션                  | 설명                                                                                  |
 | :-----------          | :-----------                                                                          |
 | chooseWeapon          | weaponBag 활성화                                                                      |
-| gutShooting           | 트리거를 당길시 총알(bulletObj)이 나감                                                |
-| swordAura             | 트리거를 당기고 lightSaber를 휘두를시 전방으로 검기 방출                              |
-| killEnemy             | player의 움직임에 따라weaponObj와 enemyObj가 상호작용시 enemyObj가 사라지며 점수 획득 |
+| gutShooting           | 트리거를 당길시 총알이 나감                                                           |
+| swordAuraCasting      | 트리거를 당기고 lightSaber를 휘두를시 전방으로 검기 방출                              |
 
 [enemy 액션 리스트]  
 
 | 액션                  | 설명                                                                                  |
 | :-----------          | :-----------                                                                          |
-| taggingEnemy          | enemyObj에 stage에 따른 이름을 붙혀줌                                                 |
-| generateEnemy         | 랜덤한 위치에서 enemyObj 생성 후 플레이어를 향해 날아감                               |
-| crashEnemy            | weaponObj와 상호작용을 하여 enemyObj 터짐                                             |
-| bombEnemy             | crashEnemy가 된 enemyObj가 터지는 액션                                                |
+| taggingEnemy          | enemyObj에 stage마다 설정 해준 이름을 붙혀줌                                          |
+| respawnEnemy          | 랜덤한 위치에서 enemyObj 생성 후 플레이어를 향해 날아감                               |
 | aliveEnemy            | EnemyObj가 살아남아 alive 구간에 도달한 경우 -> 플레이어의 helthPoint 감소            |
-| attacPatterEnemy      | bossEnemy의 특수 공격 패턴 ex황금 닭의 황금 깃털 발사                                 |
+| attackPattern         | bossEnemy의 특수 공격 패턴 ex&#41;황금 닭의 황금 깃털 발사                            |
 
 [게임규칙]
-> 1. weaponObj와 enemyObj 충돌시 enemyObj는 소멸 player score 증가  
+> 1. weapon과 enemy 충돌시 enemyObj는 소멸 score 증가  
 > 2. enemy 등급에 따라 normal은 1번 elite는 2번 충돌시 소멸  
 > 3. boss enemy는 특수 패턴을 파훼시 소멸  
-> 4. enemyObj는 생성된 후 플레이어 뒤쪽에 alive구역을 향해 날아감. 구역에 도달시 경고음과 함께 hp감소  
+> 4. enemy는 생성된 후 플레이어 뒤쪽에 alive구역을 향해 이동. 구역에 도달시 경고음과 함께 hp감소  
 > 5. 스테이지 마지막 boss 패턴 파훼시 스테이지 클리어  
 > 6. 스테이지 클리어 시 player score에 따라 등급 산출  
 > 7. 스테이지 4 클리어시 전체 스테이지 평균 등급 산출  
@@ -196,6 +191,97 @@
 # 7. 개발 요구사항 & 흐름도<a name="requirements_flowchart"/>
 
 ## 요구사항
+
+### 플레이어 파라미터
+<blockquote>
+    <ol>
+        <li>
+        <li>
+        <li>
+        <li>
+        <li>
+    </ol>
+</blockquote>
+
+### 오브젝트 속성 - Weapon
+<blockquote>
+    <ol>
+        <li>
+        <li>
+        <li>
+        <li>
+        <li>
+    </ol>
+</blockquote>
+
+### 오브젝트 속성 - Enemy
+<blockquote>
+    <ol>
+        <li>
+        <li>
+        <li>
+        <li>
+        <li>
+    </ol>
+</blockquote>
+
+### 스테이지 공통
+<blockquote>
+    <ol>
+        <li>
+        <li>
+        <li>
+        <li>
+        <li>
+    </ol>
+</blockquote>
+
+### <st1>스테이지 1</st1>
+<blockquote>
+    <ol>
+        <li>
+        <li>
+        <li>
+        <li>
+        <li>
+    </ol>
+</blockquote>
+
+### <st2>스테이지 2</st2>
+<blockquote>
+    <ol>
+        <li>
+        <li>
+        <li>
+        <li>
+        <li>
+    </ol>
+</blockquote>
+
+### <st3>스테이지 3</st3>
+<blockquote>
+    <ol>
+        <li>
+        <li>
+        <li>
+        <li>
+        <li>
+    </ol>
+</blockquote>
+
+### <st4>스테이지 4</st4>
+<blockquote>
+    <ol>
+        <li>
+        <li>
+        <li>
+        <li>
+        <li>
+    </ol>
+</blockquote>
+
+### 시작 화면 & UI
+
 > 1. 고정 플레이 영역으로 진행  
 > 2. (StartWindowUI)타이틀 화면은 중앙 상단부에 게임 타이틀과 중앙 하단부에 3가지 메뉴(모드 선택, 옵션, 나가기)로 구성  
 > 3. (StartWindowUI)모드 선택 메뉴 선택시 모드 선택 화면으로 전환  
@@ -214,29 +300,29 @@
 > 16. (EnemyBase)랜덤하게 생성되는 enemy에 normal, elite등급을 설정하고, 8:2 비율로 생성  
 > 17. (EnemyBase)enemyAilveArea(player 시점방향 뒤쪽으로 2m떨어진 곳)에 enemyObj도달 시 player healthPoint감소  
 > 18. (EnemyBase)normal은 2, elite는 5만큼의 데미지를 줌  
-> 19. (<y>stage 1</y>)병아리는 normal 등급, 화난 병아리는 elite등급  
-> 20. (<y>stage 1</y>)총 4번(1학기 중간, 기말, 2학기 중간, 기말고사) boss등급 enemy출현  
-> 21. (<y>stage 1</y>)1학기 중간고사 - 흰색 닭  
-> 22. (<y>stage 1</y>)흰색 닭 attack pattern - enemySpawnArea에서 player를 향해 달걀 3번 투척 후 오른쪽 or 왼쪽 이동 후 반복. enemySpawnArea를 3등분한 기준으로 이동.  
-> 23. (<y>stage 1</y>)흰색 닭 attack pattern - 중앙에서 달걀 5개를 동시에 투척(수평방향)  
-> 24. (<y>stage 1</y>)흰색 닭 attack pattern - 21)패턴은 3번 연속 실행 후 2초간 딜레이. 총 3번의 반복동작 이후 22)패턴 실행  
-> 25. (<y>stage 1</y>)흰색 닭 attack pattern - 달걀의 데미지는 normal등급 enemy와 동일  
-> 26. (<y>stage 1</y>)흰색 닭 attack pattern - 달걀 50개 파괴시 19)패턴의 반복 동작 이후 플레이어를 향해 날아들어 쪼기 패턴 실행  
-> 27. (<y>stage 1</y>)흰색 닭 attack pattern - 쪼기 데미지는 3 쪼는 순간에만 오브젝트가 활성화되고, 활성화 될 때 공격시 강하게 넉백. 총 3번의 넉백 성공시 도주  
-> 28. (<y>stage 1</y>)1학기 기말고사 - 검은색 닭  
-> 29. (<y>stage 1</y>)검은색 닭 attack pattern - 19), 20)패턴과 동일 쪼기 패턴의 데미지만 4로 변경  
-> 30. (<y>stage 1</y>)2학기 중간고사 - 흰색 닭&검은색 닭  
-> 31. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 달걀 3번 투척 후 이동 패턴을 총 4구역으로 나눠서 player시야 기준 왼쪽 2구역에 흰색 닭, 오른쪽 2구역에 검은색 닭 배치. 패턴은 순차적 실행(동시x)  
-> 32. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴도 동시 실행. 흰색>검은색 순으로 실행  
-> 33. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴을 진입하는 달걀파괴 횟수 60회로 증가, 넉백 성공은 각각 2번씩 성공시 도주  
-> 34. (<y>stage 1</y>)2학기 기말고사 - 황금 닭  
-> 35. (<y>stage 1</y>)황금 닭 attack pattern - 19), 20)패턴과 동일  
-> 36. (<y>stage 1</y>)황금 닭 attack pattern - 달걀을 20, 40, 60개 파괴시 19)패턴 반복동작 이후 중앙으로 이동 후 공중에서 플레이어를 향해 깃털을 다수 발사. 깃털의 데미지는 1  
-> 37. (<y>stage 1</y>)황금 닭 attack pattern - 35)패턴 총 3번 실행 후 쪼기 패턴 실행. 5번 넉백시 도주 후 스테이지 클리어  
-> 38. (<g>stage 2</g>)stage 2 진입 시 gun weapon추가 알림 창 띄움  
-> 39. (<g>stage 2</g>)악마, 박쥐는 normal등급 대왕 박쥐는 elite 등급  
-> 40. (<g>stage 2</g>)박쥐와 대왕박쥐는 공중에서 접근  
-> 41. (<g>stage 2</g>)1학기 중간고사 - 전공 교수님(stage 2의 보스는 모두 동일, 패턴만 추가)  
+> 19. (<st1>stage 1</st1>)병아리는 normal 등급, 화난 병아리는 elite등급  
+> 20. (<st1>stage 1</st1>)총 4번(1학기 중간, 기말, 2학기 중간, 기말고사) boss등급 enemy출현  
+> 21. (<st1>stage 1</st1>)1학기 중간고사 - 흰색 닭  
+> 22. (<st1>stage 1</st1>)흰색 닭 attack pattern - enemySpawnArea에서 player를 향해 달걀 3번 투척 후 오른쪽 or 왼쪽 이동 후 반복. enemySpawnArea를 3등분한 기준으로 이동.  
+> 23. (<st1>stage 1</st1>)흰색 닭 attack pattern - 중앙에서 달걀 5개를 동시에 투척(수평방향)  
+> 24. (<st1>stage 1</st1>)흰색 닭 attack pattern - 21)패턴은 3번 연속 실행 후 2초간 딜레이. 총 3번의 반복동작 이후 22)패턴 실행  
+> 25. (<st1>stage 1</st1>)흰색 닭 attack pattern - 달걀의 데미지는 normal등급 enemy와 동일  
+> 26. (<st1>stage 1</st1>)흰색 닭 attack pattern - 달걀 50개 파괴시 19)패턴의 반복 동작 이후 플레이어를 향해 날아들어 쪼기 패턴 실행  
+> 27. (<st1>stage 1</st1>)흰색 닭 attack pattern - 쪼기 데미지는 3 쪼는 순간에만 오브젝트가 활성화되고, 활성화 될 때 공격시 강하게 넉백. 총 3번의 넉백 성공시 도주  
+> 28. (<st1>stage 1</st1>)1학기 기말고사 - 검은색 닭  
+> 29. (<st1>stage 1</st1>)검은색 닭 attack pattern - 19), 20)패턴과 동일 쪼기 패턴의 데미지만 4로 변경  
+> 30. (<st1>stage 1</st1>)2학기 중간고사 - 흰색 닭&검은색 닭  
+> 31. (<st1>stage 1</st1>)흰색 닭&검은색 닭 attack pattern - 달걀 3번 투척 후 이동 패턴을 총 4구역으로 나눠서 player시야 기준 왼쪽 2구역에 흰색 닭, 오른쪽 2구역에 검은색 닭 배치. 패턴은 순차적 실행(동시x)  
+> 32. (<st1>stage 1</st1>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴도 동시 실행. 흰색>검은색 순으로 실행  
+> 33. (<st1>stage 1</st1>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴을 진입하는 달걀파괴 횟수 60회로 증가, 넉백 성공은 각각 2번씩 성공시 도주  
+> 34. (<st1>stage 1</st1>)2학기 기말고사 - 황금 닭  
+> 35. (<st1>stage 1</st1>)황금 닭 attack pattern - 19), 20)패턴과 동일  
+> 36. (<st1>stage 1</st1>)황금 닭 attack pattern - 달걀을 20, 40, 60개 파괴시 19)패턴 반복동작 이후 중앙으로 이동 후 공중에서 플레이어를 향해 깃털을 다수 발사. 깃털의 데미지는 1  
+> 37. (<st1>stage 1</st1>)황금 닭 attack pattern - 35)패턴 총 3번 실행 후 쪼기 패턴 실행. 5번 넉백시 도주 후 스테이지 클리어  
+> 38. (<st2>stage 2</st2>)stage 2 진입 시 gun weapon추가 알림 창 띄움  
+> 39. (<st2>stage 2</st2>)악마, 박쥐는 normal등급 대왕 박쥐는 elite 등급  
+> 40. (<st2>stage 2</st2>)박쥐와 대왕박쥐는 공중에서 접근  
+> 41. (<st2>stage 2</st2>)1학기 중간고사 - 전공 교수님(stage 2의 보스는 모두 동일, 패턴만 추가)  
 > 42. (/*TODO : stage 2 BossEnemyPattern 추가*/)
 > 43. oculus menu 버튼 클릭시 현재 게임 일시 정지, 계속 하기, 나가기 선택창 활성화  
 > 44. 개발 진행 상황에 맞춰 "같이 하기"모드 개발 진행  
@@ -260,27 +346,27 @@
 > 18. (EnemyBase)normal은 2, elite는 5만큼의 데미지를 줌  
 
 ### 3주차(Enemy 애니메이션)
-> 19. (<y>stage 1</y>)병아리는 normal 등급, 화난 병아리는 elite등급  
-> 20. (<y>stage 1</y>)총 4번(1학기 중간, 기말, 2학기 중간, 기말고사) boss등급 enemy출현  
-> 21. (<y>stage 1</y>)1학기 중간고사 - 흰색 닭  
-> 28. (<y>stage 1</y>)1학기 기말고사 - 검은색 닭  
-> 34. (<y>stage 1</y>)2학기 기말고사 - 황금 닭  
+> 19. (<st1>stage 1</st1>)병아리는 normal 등급, 화난 병아리는 elite등급  
+> 20. (<st1>stage 1</st1>)총 4번(1학기 중간, 기말, 2학기 중간, 기말고사) boss등급 enemy출현  
+> 21. (<st1>stage 1</st1>)1학기 중간고사 - 흰색 닭  
+> 28. (<st1>stage 1</st1>)1학기 기말고사 - 검은색 닭  
+> 34. (<st1>stage 1</st1>)2학기 기말고사 - 황금 닭  
 
 ### 4주차(AttackPattern - 1)
-> 22. (<y>stage 1</y>)흰색 닭 attack pattern - enemySpawnArea에서 player를 향해 달걀 3번 투척 후 오른쪽 or 왼쪽 이동 후 반복. enemySpawnArea를 3등분한 기준으로 이동.  
-> 23. (<y>stage 1</y>)흰색 닭 attack pattern - 중앙에서 달걀 5개를 동시에 투척(수평방향)  
-> 24. (<y>stage 1</y>)흰색 닭 attack pattern - 21)패턴은 3번 연속 실행 후 2초간 딜레이. 총 3번의 반복동작 이후 22)패턴 실행  
-> 25. (<y>stage 1</y>)흰색 닭 attack pattern - 달걀의 데미지는 normal등급 enemy와 동일 
+> 22. (<st1>stage 1</st1>)흰색 닭 attack pattern - enemySpawnArea에서 player를 향해 달걀 3번 투척 후 오른쪽 or 왼쪽 이동 후 반복. enemySpawnArea를 3등분한 기준으로 이동.  
+> 23. (<st1>stage 1</st1>)흰색 닭 attack pattern - 중앙에서 달걀 5개를 동시에 투척(수평방향)  
+> 24. (<st1>stage 1</st1>)흰색 닭 attack pattern - 21)패턴은 3번 연속 실행 후 2초간 딜레이. 총 3번의 반복동작 이후 22)패턴 실행  
+> 25. (<st1>stage 1</st1>)흰색 닭 attack pattern - 달걀의 데미지는 normal등급 enemy와 동일 
 
 ### 5주차(AttackPattern - 2)
-> 26. (<y>stage 1</y>)흰색 닭 attack pattern - 달걀 50개 파괴시 19)패턴의 반복 동작 이후 플레이어를 향해 날아들어 쪼기 패턴 실행  
-> 27. (<y>stage 1</y>)흰색 닭 attack pattern - 쪼기 데미지는 3 쪼는 순간에만 오브젝트가 활성화되고, 활성화 될 때 공격시 강하게 넉백. 총 3번의 넉백 성공시 도주  
-> 28. (<y>stage 1</y>)검은색 닭 attack pattern - 19), 20)패턴과 동일 쪼기 패턴의 데미지만 4로 변경  
-> 35. (<y>stage 1</y>)황금 닭 attack pattern - 19), 20)패턴과 동일  
+> 26. (<st1>stage 1</st1>)흰색 닭 attack pattern - 달걀 50개 파괴시 19)패턴의 반복 동작 이후 플레이어를 향해 날아들어 쪼기 패턴 실행  
+> 27. (<st1>stage 1</st1>)흰색 닭 attack pattern - 쪼기 데미지는 3 쪼는 순간에만 오브젝트가 활성화되고, 활성화 될 때 공격시 강하게 넉백. 총 3번의 넉백 성공시 도주  
+> 28. (<st1>stage 1</st1>)검은색 닭 attack pattern - 19), 20)패턴과 동일 쪼기 패턴의 데미지만 4로 변경  
+> 35. (<st1>stage 1</st1>)황금 닭 attack pattern - 19), 20)패턴과 동일  
 
 ### 6주차(AttackPattern - 3)
-> 31. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 달걀 3번 투척 후 이동 패턴을 총 4구역으로 나눠서 player시야 기준 왼쪽 2구역에 흰색 닭, 오른쪽 2구역에 검은색 닭 배치. 패턴은 순차적 실행(동시x)  
-> 32. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴도 동시 실행. 흰색>검은색 순으로 실행  
-> 33. (<y>stage 1</y>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴을 진입하는 달걀파괴 횟수 60회로 증가, 넉백 성공은 각각 2번씩 성공시 도주  
-> 36. (<y>stage 1</y>)황금 닭 attack pattern - 달걀을 20, 40, 60개 파괴시 19)패턴 반복동작 이후 중앙으로 이동 후 공중에서 플레이어를 향해 깃털을 다수 발사. 깃털의 데미지는 1  
-> 37. (<y>stage 1</y>)황금 닭 attack pattern - 35)패턴 총 3번 실행 후 쪼기 패턴 실행. 5번 넉백시 도주 후 스테이지 클리어  
+> 31. (<st1>stage 1</st1>)흰색 닭&검은색 닭 attack pattern - 달걀 3번 투척 후 이동 패턴을 총 4구역으로 나눠서 player시야 기준 왼쪽 2구역에 흰색 닭, 오른쪽 2구역에 검은색 닭 배치. 패턴은 순차적 실행(동시x)  
+> 32. (<st1>stage 1</st1>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴도 동시 실행. 흰색>검은색 순으로 실행  
+> 33. (<st1>stage 1</st1>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴을 진입하는 달걀파괴 횟수 60회로 증가, 넉백 성공은 각각 2번씩 성공시 도주  
+> 36. (<st1>stage 1</st1>)황금 닭 attack pattern - 달걀을 20, 40, 60개 파괴시 19)패턴 반복동작 이후 중앙으로 이동 후 공중에서 플레이어를 향해 깃털을 다수 발사. 깃털의 데미지는 1  
+> 37. (<st1>stage 1</st1>)황금 닭 attack pattern - 35)패턴 총 3번 실행 후 쪼기 패턴 실행. 5번 넉백시 도주 후 스테이지 클리어  
