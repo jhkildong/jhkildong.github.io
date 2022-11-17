@@ -195,37 +195,37 @@
 ### 플레이어 파라미터
 <blockquote>
     <ol>
-        <li>구성 : WeaponBag(무기 관리 오브젝트), HP, Score
-        <li>HP최대치는 100으로 설정
-        <li>HP가 20이하로 내려갈 시 경고음과 강한 컨트롤러 진동으로 알림 표시
-        <li>enemy처치시 score상승 점수 시스템은 Enemy 속성 참고
+        <li>구성 : WeaponBag(무기 관리 오브젝트), HP, Score</li>
+        <li>HP최대치는 100으로 설정</li>
+        <li>HP가 20이하로 내려갈 시 경고음과 강한 컨트롤러 진동으로 알림 표시</li>
+        <li>enemy처치시 score상승 점수 시스템은 Enemy 속성 참고</li>
     </ol>
 </blockquote>
 
 ### 오브젝트 속성 - WeaponBag
 <blockquote>
     <ol>
-        <li>구성 : Sword, Gun, Shield, LightSaber, WeaponBagUI
-        <li>WeaponBagUI - 무기 교체를 담당하는 UI, 컨트롤러 상단 버튼 클릭 시 컨트롤러 상단에 뜨게 설정
-        <li>WeaponBagUI - 스틱을 이용해서 조작, 스틱을 좌우로 움직여 weapon을 선택하고 스틱을 앞으로 누르면 선택한 weopon으로 갈아껴지고, UI는 사라짐
-        <li>Sword - <st1>stage 1</st1>에서 주어지는 기본 무기
-        <li>Gun - <st2>stage 2</st2>에서 주어지는 무기. 정면 트리거를 누르면 총알을 발사. 측면 트리거를 누르면 장전. 총알에만 충돌 적용
-        <li>Shield - <st3>stage 3</st3>에서 주어지는 무기. Enemy와 충돌 처리 없음. 보스의 특정 기믹 처리 시 사용
-        <li>LightSaber - <st4>stage 4</st4>에서 주어지는 무기. 정면 트리거를 1초동안 누르면 swordAura 캐스팅완료. 그 후 휘두를 방향으로 발사
+        <li>구성 : Sword, Gun, Shield, LightSaber, WeaponBagUI</li>
+        <li>WeaponBagUI - 무기 교체를 담당하는 UI, 컨트롤러 상단 버튼 클릭 시 컨트롤러 상단에 뜨게 설정</li>
+        <li>WeaponBagUI - 스틱을 이용해서 조작, 스틱을 좌우로 움직여 weapon을 선택하고 스틱을 앞으로 누르면 선택한 weopon으로 갈아껴지고, UI는 사라짐</li>
+        <li>Sword - <st1>stage 1</st1>에서 주어지는 기본 무기</li>
+        <li>Gun - <st2>stage 2</st2>에서 주어지는 무기. 정면 트리거를 누르면 총알을 발사. 측면 트리거를 누르면 장전. 총알에만 충돌 적용</li>
+        <li>Shield - <st3>stage 3</st3>에서 주어지는 무기. Enemy와 충돌 처리 없음. 보스의 특정 기믹 처리 시 사용</li>
+        <li>LightSaber - <st4>stage 4</st4>에서 주어지는 무기. 정면 트리거를 1초동안 누르면 swordAura 캐스팅완료. 그 후 휘두를 방향으로 발사</li>
     </ol>
 </blockquote>
 
 ### 오브젝트 속성 - Enemy
 <blockquote>
     <ol>
-        <li>등급 구성 : Normal, Elite, Boss 
-        <li>게임 시작시 플레이어로부터 10m가량 떨어진 EnemySpawnZone에서 플레이어를 향해 달려오는 Enemy 생성
-        <li>EnemySpawnZone은 사다리꼴 모양의 3면으로 구성을해서 플레이어를 중심으로 모이게 설정
-        <li>생성되는 Enemy의 등급은 Normal, Elite로 8:2비율로 생성
-        <li>플레이어 시야 방향 뒤쪽에 AliveZone 도달 시 플레이어 에게 Normal은 1 Elite는 3의 데미지를 입힘
-        <li>데미지를 줄 때 마다 경고음과 약한 컨트롤러 진동으로 상태 전달
-        <li>각 stage마다 다른 Boss Enemy 배치, 각 보스들은 고유의 패턴 존재
-        <li>보스들의 패턴은 스테이지 항목 참조
+        <li>등급 구성 : Normal, Elite, Boss</li>
+        <li>게임 시작시 플레이어로부터 10m가량 떨어진 EnemySpawnZone에서 플레이어를 향해 달려오는 Enemy 생성</li>
+        <li>EnemySpawnZone은 사다리꼴 모양의 3면으로 구성을해서 플레이어를 중심으로 모이게 설정</li>
+        <li>생성되는 Enemy의 등급은 Normal, Elite로 8:2비율로 생성</li>
+        <li>플레이어 시야 방향 뒤쪽에 AliveZone 도달 시 플레이어 에게 Normal은 1 Elite는 3의 데미지를 입힘</li>
+        <li>데미지를 줄 때 마다 경고음과 약한 컨트롤러 진동으로 상태 전달</li>
+        <li>각 stage마다 다른 Boss Enemy 배치, 각 보스들은 고유의 패턴 존재</li>
+        <li>보스들의 패턴은 스테이지 항목 참조</li>
         <li><i>(TODO:점수 계산 공식 추가 필요)</i>
     </ol>
 </blockquote>
@@ -233,70 +233,70 @@
 ### 스테이지 공통
 <blockquote>
     <ol>
-        <li>시작 시 sword를 장착하고 시작
-        <li>스테이지의 구성은 1분(Normal,Eliete 구간) + 30초~1분(Boss 구간)를 한 step으로 묶어 4번 반복. 약 6~8분 정도의 길이
-        <li><i>(TODO:스테이지 UI 구성 추가 필요)</i>
+        <li>시작 시 sword를 장착하고 시작</li>
+        <li>스테이지의 구성은 1분(Normal,Eliete 구간) + 30초~1분(Boss 구간)를 한 step으로 묶어 4번 반복. 약 6~8분 정도의 길이</li>
+        <li><i>(TODO:스테이지 UI 구성 추가 필요)</i></li>
     </ol>
 </blockquote>
 
 ### <st1>스테이지 1</st1>
 <blockquote>
     <ol>
-        <li>기본 Enemy는 병아리, 보스 Enemy는 닭
-        <li>normal 등급의 병아리는 노란색, Elite등급의 병아리는 빨간색으로 설정
-        <li>Boss 색상 : step1 - 흰색, step2 - 검은색, step3 - 흰색&검은색 닭 동시 출현, step4 - 황금색
-        <li>Boss 공통 패턴 1 : 플레이어에게 달걀을 4번 연속던짐. 무기로 파괴 가능하며 파괴를 못할 시 1의 데미지
-        <li>Boss 공통 패턴 2-1 : 플레이어가 달걀을 일정 이상 처치 시 다가와서 플레이어 쪼기. 넉백 실패 시 4의 데미지. 플레이어 HP가 전부 소진 될 때 까지 반복
-        <li>Boss 공통 패턴 2-2 : 쪼기 모션 시전 도중 부리에 충돌처리. 부리 공격에 성공하면 넉백 모션을 실행. 총 4번의 넉백이후 1, 2 stage 도망, 3, 4스테이지 사망
-        <li>Boss 패턴 step1, 2 : 달걀 던지기 패턴 이후 EnemySpawnZone을 기준으로 위치 이동.
-        <li>Boss 패턴 step3    : 왼쪽과 오른쪽에 step1, step2 보스를 각각 배치
-        <li>Boss 패턴 step3    : 모든 패턴은 두 보스가 중복해서 사용하지 않게 설정
-        <li>Boss 패턴 step4    : 달걀 던지기 패턴 이후 쪼기 패턴 전에 공중으로 날아올라서 깃털 날리기 패턴 시전. 깃털의 데미지는 1
-        <li>Boss 패턴 step4    : 한번에 5개의 깃털을 여러 방향으로 발사 달걀과 동일하게 처리 가능. 총 5번 공격 이후 쪼기 공격 실행
+        <li>기본 Enemy는 병아리, 보스 Enemy는 닭</li>
+        <li>normal 등급의 병아리는 노란색, Elite등급의 병아리는 빨간색으로 설정</li>
+        <li>Boss 색상 : step1 - 흰색, step2 - 검은색, step3 - 흰색&검은색 닭 동시 출현, step4 - 황금색</li>
+        <li>Boss 공통 패턴 1 : 플레이어에게 달걀을 4번 연속던짐. 무기로 파괴 가능하며 파괴를 못할 시 1의 데미지</li>
+        <li>Boss 공통 패턴 2-1 : 플레이어가 달걀을 일정 이상 처치 시 다가와서 플레이어 쪼기. 넉백 실패 시 4의 데미지. 플레이어 HP가 전부 소진 될 때 까지 반복</li>
+        <li>Boss 공통 패턴 2-2 : 쪼기 모션 시전 도중 부리에 충돌처리. 부리 공격에 성공하면 넉백 모션을 실행. 총 4번의 넉백이후 1, 2 stage 도망, 3, 4스테이지 사망</li>
+        <li>Boss 패턴 step1, 2 : 달걀 던지기 패턴 이후 EnemySpawnZone을 기준으로 위치 이동.</li>
+        <li>Boss 패턴 step3    : 왼쪽과 오른쪽에 step1, step2 보스를 각각 배치</li>
+        <li>Boss 패턴 step3    : 모든 패턴은 두 보스가 중복해서 사용하지 않게 설정</li>
+        <li>Boss 패턴 step4    : 달걀 던지기 패턴 이후 쪼기 패턴 전에 공중으로 날아올라서 깃털 날리기 패턴 시전. 깃털의 데미지는 1</li>
+        <li>Boss 패턴 step4    : 한번에 5개의 깃털을 여러 방향으로 발사 달걀과 동일하게 처리 가능. 총 5번 공격 이후 쪼기 공격 실행</li>
     </ol>
 </blockquote>
 
 ### <st2>스테이지 2</st2>
 <blockquote>
     <ol>
-        <li>
-        <li>
-        <li>
-        <li>
-        <li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
     </ol>
 </blockquote>
 
 ### <st3>스테이지 3</st3>
 <blockquote>
     <ol>
-        <li>
-        <li>
-        <li>
-        <li>
-        <li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
     </ol>
 </blockquote>
 
 ### <st4>스테이지 4</st4>
 <blockquote>
     <ol>
-        <li>
-        <li>
-        <li>
-        <li>
-        <li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
     </ol>
 </blockquote>
 
 ### 시작 화면 & UI
 <blockquote>
     <ol>
-        <li>
-        <li>
-        <li>
-        <li>
-        <li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
     </ol>
 </blockquote>
 
