@@ -305,44 +305,21 @@
 ## 6주 요구사항
 
 ### 1주차(PlayerWeapon 구현)
-> 9. ~~(PlayerWeapon)게임 시작히 플레이어는 기본적으로 양손에 sword weaponObj를 장착하고 시작~~  
-> 11. ~~(PlayerWeapon)sword는 검의 몸체 부분이 enemy와 충돌만 있어도 상호작용~~  
-> 12. ~~(PlayerWeapon)gun은 컨트롤러의 트리거부분 누를 시 단발 발사~~ (coroutine 사용 쿨타임 적용)  
-> 13. (PlayerWeapon)lightSaber는 컨트롤러의 트리거를 누른 상태(1초간)에서 검을 휘두를시 검을 휘두른 방향으로 swordAura 발사  
+
 
 ### 2주차(WeaponBag & Parameter & EnemyBase 구현)
-> 10. (PlayerWeapon)각 컨트롤러의 상단부 버튼(Left : Y, Right : B)클릭 시 클릭한 컨트롤러 방향에 weaponBag 활성화  
-> 14. (PlayerParameter)최대 helthPoint는 100으로 설정, 플레이어에게 체력 게이지는 보여주지않고 체력이 20이하로 내려갈 시 경고음과 함께 빨간색 화면이 깜빡임을 통해 경고표시  
-> 15. (EnemyBase)enemy는 enemySpawnArea(player로 시점방향으로 10m 떨어진 곳)에서 랜덤하게 생성 후 palyer를 향해 다가옴  
-> 16. (EnemyBase)랜덤하게 생성되는 enemy에 normal, elite등급을 설정하고, 8:2 비율로 생성  
-> 17. (EnemyBase)enemyAilveArea(player 시점방향 뒤쪽으로 2m떨어진 곳)에 enemyObj도달 시 player healthPoint감소  
-> 18. (EnemyBase)normal은 2, elite는 5만큼의 데미지를 줌  
+
 
 ### 3주차(Enemy 애니메이션)
-> 19. (<st1>stage 1</st1>)병아리는 normal 등급, 화난 병아리는 elite등급  
-> 20. (<st1>stage 1</st1>)총 4번(1학기 중간, 기말, 2학기 중간, 기말고사) boss등급 enemy출현  
-> 21. (<st1>stage 1</st1>)1학기 중간고사 - 흰색 닭  
-> 28. (<st1>stage 1</st1>)1학기 기말고사 - 검은색 닭  
-> 34. (<st1>stage 1</st1>)2학기 기말고사 - 황금 닭  
+
 
 ### 4주차(AttackPattern - 1)
-> 22. (<st1>stage 1</st1>)흰색 닭 attack pattern - enemySpawnArea에서 player를 향해 달걀 3번 투척 후 오른쪽 or 왼쪽 이동 후 반복. enemySpawnArea를 3등분한 기준으로 이동.  
-> 23. (<st1>stage 1</st1>)흰색 닭 attack pattern - 중앙에서 달걀 5개를 동시에 투척(수평방향)  
-> 24. (<st1>stage 1</st1>)흰색 닭 attack pattern - 21)패턴은 3번 연속 실행 후 2초간 딜레이. 총 3번의 반복동작 이후 22)패턴 실행  
-> 25. (<st1>stage 1</st1>)흰색 닭 attack pattern - 달걀의 데미지는 normal등급 enemy와 동일 
+
 
 ### 5주차(AttackPattern - 2)
-> 26. (<st1>stage 1</st1>)흰색 닭 attack pattern - 달걀 50개 파괴시 19)패턴의 반복 동작 이후 플레이어를 향해 날아들어 쪼기 패턴 실행  
-> 27. (<st1>stage 1</st1>)흰색 닭 attack pattern - 쪼기 데미지는 3 쪼는 순간에만 오브젝트가 활성화되고, 활성화 될 때 공격시 강하게 넉백. 총 3번의 넉백 성공시 도주  
-> 28. (<st1>stage 1</st1>)검은색 닭 attack pattern - 19), 20)패턴과 동일 쪼기 패턴의 데미지만 4로 변경  
-> 35. (<st1>stage 1</st1>)황금 닭 attack pattern - 19), 20)패턴과 동일  
 
 ### 6주차(AttackPattern - 3)
-> 31. (<st1>stage 1</st1>)흰색 닭&검은색 닭 attack pattern - 달걀 3번 투척 후 이동 패턴을 총 4구역으로 나눠서 player시야 기준 왼쪽 2구역에 흰색 닭, 오른쪽 2구역에 검은색 닭 배치. 패턴은 순차적 실행(동시x)  
-> 32. (<st1>stage 1</st1>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴도 동시 실행. 흰색>검은색 순으로 실행  
-> 33. (<st1>stage 1</st1>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴을 진입하는 달걀파괴 횟수 60회로 증가, 넉백 성공은 각각 2번씩 성공시 도주  
-> 36. (<st1>stage 1</st1>)황금 닭 attack pattern - 달걀을 20, 40, 60개 파괴시 19)패턴 반복동작 이후 중앙으로 이동 후 공중에서 플레이어를 향해 깃털을 다수 발사. 깃털의 데미지는 1  
-> 37. (<st1>stage 1</st1>)황금 닭 attack pattern - 35)패턴 총 3번 실행 후 쪼기 패턴 실행. 5번 넉백시 도주 후 스테이지 클리어  
+
 
 
 ## 주차별 영상
