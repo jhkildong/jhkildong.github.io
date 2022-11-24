@@ -343,3 +343,15 @@
 > 33. (<st1>stage 1</st1>)흰색 닭&검은색 닭 attack pattern - 쪼기 패턴을 진입하는 달걀파괴 횟수 60회로 증가, 넉백 성공은 각각 2번씩 성공시 도주  
 > 36. (<st1>stage 1</st1>)황금 닭 attack pattern - 달걀을 20, 40, 60개 파괴시 19)패턴 반복동작 이후 중앙으로 이동 후 공중에서 플레이어를 향해 깃털을 다수 발사. 깃털의 데미지는 1  
 > 37. (<st1>stage 1</st1>)황금 닭 attack pattern - 35)패턴 총 3번 실행 후 쪼기 패턴 실행. 5번 넉백시 도주 후 스테이지 클리어  
+
+
+## 주차별 영상
+
+### 3주차
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xKRFIN0dzgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+
+
+### 4주차
+
+
+### 5주차
